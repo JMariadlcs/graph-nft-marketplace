@@ -18,7 +18,7 @@ We are using TheGraph for reading the events. Steps:
 - Go to [TheGraph](https://thegraph.com/studio/).
 - Connect Metamask
 - Change to Smart Contracts deployed network (maybe Rinkeby)
-- Create subGraph
+- Create subGraph studio
 - Create a new git repository for your subGraph
 - Install Graph CLI:
 
@@ -29,13 +29,13 @@ sudo yarn global add @graphprotocol/graph-cli
 - Initialize subGraph (change the name):
 
 ```bash
-graph init --studio graphnftmarketplace
+graph init --studio nftgraphmarketplace
 ```
 
 - Execute (change name):
 
 ```bash
-mv graphnftmarketplace/* ./
+mv nftgraphmarketplace/* ./
 and marketplace-nft-fcc folder.
 ```
 
@@ -58,7 +58,7 @@ graph codegen
 ```bash
 graph auth --studio XXX
 graph codegen && graph build
-graph deploy --studio graphnftmarketplace
+graph deploy --studio nftgraphmarketplace
 ```
 
 - Version label: v0.0.1
